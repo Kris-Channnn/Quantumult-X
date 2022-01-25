@@ -76,7 +76,7 @@ const message = {
     result["Disney"] = "<b>Disneyᐩ:</b> ⚠️ 即将登陆 ➟ "+'⟦'+flags.get(region.toUpperCase())+"⟧"
   } else if (status==STATUS_AVAILABLE){
     //console.log(2)
-    result["Disney"] = "<b>Disneyᐩ:</b> 支持 ➟ "+'⟦'+flags.get(region.toUpperCase())+"⟧ 🍹"
+    result["Disney"] = "<b>Disneyᐩ:</b> 支持 ➟ "+'⟦'+flags.get(region.toUpperCase())+"⟧ "
     console.log(result["Disney"])
   } else if (status==STATUS_NOT_AVAILABLE) {
     //console.log(3)
@@ -313,7 +313,7 @@ function testNf(filmId) {
           region = 'us'
         }
         console.log("nf:"+region)
-        result["Netflix"] = "<b>Netflix: </b>完整支持"+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ 🍸"
+        result["Netflix"] = "<b>Netflix: </b>完整支持"+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ "
         //$notify("nf:"+result["Netflix"])
         resolve("nf:"+result["Netflix"])
         return 
@@ -359,7 +359,7 @@ function testYTB() {
         region = 'US'
       }
       //resolve(region)
-      result["YouTube"] = "<b>YouTube Premium: </b>支持 "+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ 🥃"
+      result["YouTube"] = "<b>YouTube Premium: </b>支持 "+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ "
       console.log("ytb:"+region+ result["YouTube"])
       }
     }, reason => {
@@ -408,7 +408,7 @@ function testDazn() {
       let ret = re.exec(data)
       if (ret != null && ret.length === 2) {
         region = ret[1]
-        result["Dazn"] = "<b>Dazn: </b>支持 "+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ 🍺"
+        result["Dazn"] = "<b>Dazn: </b>支持 "+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ "
       } else {
         result["Dazn"] = "<b>Dazn: </b>未支持 🚫"
 
@@ -485,7 +485,7 @@ function testDiscovery() {
         let data = JSON.parse(response.body)
         let locationd = data["data"]["attributes"]["currentLocationTerritory"]
         if (locationd == "us") {
-          result["Discovery"] = "<b>Discoveryᐩ: </b>支持 🍾 "
+          result["Discovery"] = "<b>Discoveryᐩ: </b>支持  "
           console.log("支持Discoveryᐩ")
           resolve("支持Discoveryᐩ")
           return
