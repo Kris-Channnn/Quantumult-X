@@ -5,8 +5,8 @@ Thanks to & modified from
 3. https://github.com/CoiaPrant/MediaUnlock_Test/blob/main/check.sh
 For Quantumult-X 598+ ONLY!!
 [task_local]
-event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=checkmark.seal.system, enabled=true
-@XIAO_KOP
+event-interaction https://raw.githubusercontent.com/Kris-Channnn/Quantumult-X/main/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=checkmark.seal.system, enabled=true
+@ Kris-Channnn
 **/
 
 const BASE_URL = 'https://www.netflix.com/title/';
