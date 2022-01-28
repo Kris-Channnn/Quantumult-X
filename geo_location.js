@@ -1,6 +1,6 @@
 /***
   [task_local]
-  event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/geo_location.js, tag=GeoIP 查询, img-url=location.fill.viewfinder.system
+  event-interaction https://raw.githubusercontent.com/Kris-Channnn/Quantumult-X/main/geo_location.js, tag=GeoIP 查询, img-url=location.fill.viewfinder.system
   
   @Kris_Channnn
 
